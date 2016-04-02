@@ -35,6 +35,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'kien/ctrlp.vim'
 Plugin 'desert-warm-256'
 Plugin 'yann2192/vim-colorschemes'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -158,3 +159,6 @@ match OverLengthAndTrailingSpaces /\%101v.\+\|\s\+$/
 
 " Run an initial PyLint check
 autocmd FileType python PymodeLint
+
+" Tag Bar
+map <F3> :TagbarToggle<CR>
