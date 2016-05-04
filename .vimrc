@@ -22,8 +22,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " My plugins
-" Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'bling/vim-airline'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'klen/python-mode'
@@ -41,9 +40,9 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Powerline setup
-let g:airline_powerline_fonts = 1
-" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
+" let g:Powerline_symbols = 'fancy'
+" NOTE: Need to configure fonts for iterm preferences
 
 " NerdTree set up
 map <F2> :NERDTreeToggle<CR>
