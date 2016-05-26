@@ -111,6 +111,12 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_goto_buffer_command = 'same-buffer'
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+" Ctrl-p custom root marker
+let g:ctrlp_root_markers = ['.adam_ctrlp_marker']
+
+" Tagbar sort by file order
+let g:tagbar_sort = 0
+
 " Colors set up
 if has("gui_running")
     colorscheme kellys
