@@ -35,6 +35,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'desert-warm-256'
 Plugin 'yann2192/vim-colorschemes'
 Plugin 'majutsushi/tagbar'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'wincent/command-t'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -116,6 +118,33 @@ let g:ctrlp_root_markers = ['.adam_ctrlp_marker']
 
 " Tagbar sort by file order
 let g:tagbar_sort = 0
+
+" Easy Motion
+" Still trying to get the hand of this...
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+" map  s <Plug>(easymotion-sn)
+" omap s <Plug>(easymotion-tn)
+" map  / <Plug>(easymotion-sn)
+" omap / <Plug>(easymotion-tn)
+" map  n <Plug>(easymotion-next)
+" map  N <Plug>(easymotion-prev)
+" <Leader>f{char} to move to {char}
+" map  <Leader>f <Plug>(easymotion-bd-f)
+" nmap <Leader>f <Plug>(easymotion-overwin-f)
+" " s{char}{char} to move to {char}{char}
+nmap ss <Plug>(easymotion-overwin-f2)
+" Move to line
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
+" Turn on case insensitive feature
+" let g:EasyMotion_smartcase = 1
+" Move to word
+" map  <Leader>w <Plug>(easymotion-bd-w)
+" nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" Command-T
+nnoremap <silent> <Leader>t <Plug>(CommandT)
+nnoremap <silent> <Leader>T <Plug>(CommandTJump)
 
 " Colors set up
 if has("gui_running")

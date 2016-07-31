@@ -9,3 +9,8 @@ vim +PluginInstall +qall
 # YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py
+
+# Command-t
+cd ~/.vim/bundle/command-t/ruby/command-t
+ruby extconf.rb
+make
