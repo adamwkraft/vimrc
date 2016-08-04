@@ -143,7 +143,7 @@ nmap <Leader>l <Plug>(easymotion-overwin-line)
 " nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 " Command-T
-nnoremap <silent> <Leader>t <Plug>(CommandT)
+" nnoremap <silent> <Leader>t <Plug>(CommandT)
 nnoremap <silent> <Leader>T <Plug>(CommandTJump)
 
 " Colors set up
