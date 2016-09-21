@@ -179,8 +179,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-
-" TODO: Look into Repeat.vim
 " Add Python Doc Strings like numpy format
 :command Pydoc :normal i<tab>Parameters<return>----------<return><return>Returns<return>-------<ESC>
 
