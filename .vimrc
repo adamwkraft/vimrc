@@ -31,7 +31,6 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'kien/ctrlp.vim'
 Plugin 'desert-warm-256'
 Plugin 'yann2192/vim-colorschemes'
 Plugin 'majutsushi/tagbar'
@@ -112,9 +111,6 @@ let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_goto_buffer_command = 'same-buffer'
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-" Ctrl-p custom root marker
-let g:ctrlp_root_markers = ['.adam_ctrlp_marker']
 
 " Tagbar sort by file order
 let g:tagbar_sort = 0
