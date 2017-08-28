@@ -95,6 +95,9 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 let g:pymode_folding = 0
 " Turn off max-line width colorbar
 autocmd FileType python set colorcolumn=
+" Specific warnings to ignore
+let g:pymode_lint_ignore = "E231,W"
+let g:pymode_lint_ignore = "C901"
 
 " NERDTree set up
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTreeToggle
