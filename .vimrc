@@ -68,6 +68,8 @@ let g:pymode_doc = 0
 "Linting
 let g:pymode_lint = 1
 let g:pymode_lint_checker = ["pyflakes","pep8"]
+" Specific warnings to ignore
+let g:pymode_lint_ignore = "E231,C901,E266,E712"
 " Sort errors by relevance
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_options_max_line_length = 120
@@ -95,9 +97,6 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 let g:pymode_folding = 0
 " Turn off max-line width colorbar
 autocmd FileType python set colorcolumn=
-" Specific warnings to ignore
-let g:pymode_lint_ignore = "E231,W"
-let g:pymode_lint_ignore = "C901"
 
 " NERDTree set up
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTreeToggle
