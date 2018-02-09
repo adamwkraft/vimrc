@@ -166,6 +166,7 @@ endif
 
 filetype plugin indent on
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set backspace=indent,eol,start
 " automatically change window's cwd to file's dir
 set autochdir
 
@@ -224,6 +225,9 @@ endfunction
 let pyindent_nested_paren="&sw*2"
 let pyindent_open_paren="&sw*2"
 " END - Indent Python in the Google way.
+
+" Command to insert pdb
+:command PDB :normal A<enter>import pdb; pdb.set_trace()<ESC>
 
 " Open file to line where you left off
 if has("autocmd")
