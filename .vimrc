@@ -226,8 +226,9 @@ let pyindent_nested_paren="&sw*2"
 let pyindent_open_paren="&sw*2"
 " END - Indent Python in the Google way.
 
-" Command to insert pdb
+" Command to insert pdb / ipdb
 :command PDB :normal A<enter>import pdb; pdb.set_trace()<ESC>
+:command IPDB :normal A<enter>import ipdb; ipdb.set_trace()<ESC>
 
 " Open file to line where you left off
 if has("autocmd")
