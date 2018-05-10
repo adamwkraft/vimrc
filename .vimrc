@@ -69,7 +69,7 @@ let g:pymode_doc = 0
 let g:pymode_lint = 1
 let g:pymode_lint_checker = ["pyflakes","pep8"]
 " Specific warnings to ignore
-let g:pymode_lint_ignore = "E231,C901,E266,E712"
+let g:pymode_lint_ignore = "E231,C901,E266,E712,E129"
 " Sort errors by relevance
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_options_max_line_length = 120
