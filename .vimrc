@@ -26,12 +26,12 @@ Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
 Plugin 'scrooloose/nerdtree'
-Plugin 'klen/python-mode'
+ Plugin 'python-mode/python-mode', { 'branch': 'develop' }
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
+" Plugin 'scrooloose/syntastic'
+" Plugin 'nvie/vim-flake8'
 Plugin 'yann2192/vim-colorschemes'
 Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
@@ -61,20 +61,21 @@ map <F2> :NERDTreeToggle<CR>
 " ]]            Jump on next class or function (normal, visual, operator modes)
 " [M            Jump on previous class or method (normal, visual, operator modes)
 " ]M            Jump on next class or method (normal, visual, operator modes)
+let g:pymode_python = 'python'
 let g:pymode_rope = 0
 " Documentation
 let g:pymode_doc = 0
 " let g:pymode_doc_key = 'K'
 "Linting
 let g:pymode_lint = 1
-let g:pymode_lint_checker = ["pyflakes","pep8"]
+let g:pymode_lint_checker = ["pep8"]
 " Specific warnings to ignore
-let g:pymode_lint_ignore = "E231,C901,E266,E712,E129"
+let g:pymode_lint_ignore = ["E231,C901,E266,E712,E129,E501"]
 " Sort errors by relevance
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_options_max_line_length = 120
 " Auto check on save
-let g:pymode_lint_write = 1
+let g:pymode_lint_on_write = 1
 " Show message on current line
 let g:pymode_lint_message = 1
 " Don't show the popup window
@@ -82,7 +83,7 @@ let g:pymode_lint_cwindow = 0
 let g:pymode_quickfix_minheight = 0
 let g:pymode_quickfix_maxheight = 0
 " Turn off max line bar
-" let g:colorcolumn=
+let g:colorcolumn = 0
 " Support virtualenv
 " let g:pymode_virtualenv = 1
 " Enable breakpoints plugin
@@ -96,7 +97,7 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 " Don't autofold code
 let g:pymode_folding = 0
 " Turn off max-line width colorbar
-autocmd FileType python set colorcolumn=
+autocmd FileType python set colorcolumn=0
 
 " NERDTree set up
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTreeToggle
