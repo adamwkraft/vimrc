@@ -30,8 +30,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
-" Plugin 'scrooloose/syntastic'
-" Plugin 'nvie/vim-flake8'
 Plugin 'yann2192/vim-colorschemes'
 Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
@@ -70,12 +68,13 @@ let g:pymode_doc = 0
 let g:pymode_lint = 1
 let g:pymode_lint_checker = ["pep8"]
 " Specific warnings to ignore
-let g:pymode_lint_ignore = ["E231,C901,E266,E712,E129,E501"]
+let g:pymode_lint_ignore = ["E231","C901","E266","E712","E129","E501"]
 " Sort errors by relevance
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_options_max_line_length = 120
 " Auto check on save
-let g:pymode_lint_on_write = 1
+" let g:pymode_lint_on_write = 1
+let g:pymode_lint_on_fly = 1
 " Show message on current line
 let g:pymode_lint_message = 1
 " Don't show the popup window
