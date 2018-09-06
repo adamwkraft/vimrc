@@ -34,6 +34,7 @@ Plugin 'yann2192/vim-colorschemes'
 Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'wincent/command-t'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -143,6 +144,12 @@ nmap <Leader>l <Plug>(easymotion-overwin-line)
 " Command-T
 " nnoremap <silent> <Leader>t <Plug>(CommandT)
 nnoremap <silent> <Leader>T <Plug>(CommandTJump)
+
+" Markdown
+let vim_markdown_preview_github=1
+let vim_markdown_preview_browser='Google Chrome'
+let vim_markdown_preview_hotkey='<leader>m'
+
 
 " Colors set up
 if has("gui_running")
