@@ -73,9 +73,9 @@ let g:pymode_lint_ignore = ["E231","C901","E266","E712","E129","E501"]
 " Sort errors by relevance
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_options_max_line_length = 120
-" Auto check on save
-" let g:pymode_lint_on_write = 1
-let g:pymode_lint_on_fly = 1
+" Auto check on save (or more aggresively on fly)
+let g:pymode_lint_on_write = 1
+" let g:pymode_lint_on_fly = 1
 " Show message on current line
 let g:pymode_lint_message = 1
 " Don't show the popup window
