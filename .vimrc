@@ -26,7 +26,7 @@ Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
 Plugin 'scrooloose/nerdtree'
- Plugin 'python-mode/python-mode', { 'branch': 'develop' }
+" Plugin 'python-mode/python-mode', { 'branch': 'python2.7-compatible' }
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
@@ -35,6 +35,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'wincent/command-t'
 Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'kkoomen/vim-doge'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -195,6 +196,9 @@ autocmd FileType python PymodeLint
 
 " Tag Bar
 map <F3> :TagbarToggle<CR>
+
+" Doge - Documentation Generator
+let g:doge_doc_standard_python = 'google'
 
 " Indent Python in the Google way.
 setlocal indentexpr=GetGooglePythonIndent(v:lnum)
